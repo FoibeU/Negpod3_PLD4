@@ -1,0 +1,46 @@
+#!/usr/bin/pythn3
+def beginner():
+    import random
+    from string import ascii_lowercase
+    import colorama
+    from colorama import Fore
+    print(Fore.YELLOW + 'You will get the following subjects')
+    print("Introductions to CSS")
+    print("HTML Introduction")
+    print("RWD Introductioni")
+def intermedium():
+    import colorama
+    from colorama import Fore
+    print(Fore.YELLOW + 'You will get the following subjects')
+    print("introduction to C")
+    print("Algorithm")
+
+def advanced():
+    import colorama
+    from colorama import Fore
+    print( Fore.YELLOW + 'You will get the following subjects6')
+    print("Python introduction")
+    print("Java Introduction")
+    print("Sql Introduction")
+
+def main():
+    print("Welcome to The basics in Technology Learning Platform")
+    print("Select one of the following level  in which you want to start with")
+    while(True):
+        print("1.Beginner Level ")
+        print("2. Mediam Level")
+        print("3. Advanced Level")
+        print("10. Exit")
+        print("Enter the choice number from above")
+        choice = int(input())
+        if choice == 1:
+            print("You have chosen Beginner Level.");
+            beginner();
+            print("Are you sure you want to start as  a beginner ? A or B.")
+            print("A. Yes, I'm sure")
+            print("B. No, I'm not sure")
+            ch = input()[0]
+            if ch == 'A':
+                print("\033[2;37;40m Wonderful, Now you can start learning the basics of web design\033[0;37;40m  \n" );
+                print("\033[2;37;40m Cascading Style Sheets (CSS) is a stylesheet language used to\n describe the presentation of a document written in HTML or XML \n(including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen,\n on paper, in speech, or on other media. ")
+
